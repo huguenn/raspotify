@@ -25,11 +25,11 @@ echo "Using package: $DEB_PKG_NAME"
 
 cd apt-repo
 
-# Clear out old stuff
+# limpiar
 rm -rf conf db pool dists
 
 mkdir conf
-# Keep jessie for backward compatibility
+# Compatibilidad
 cat <<EOF > conf/distributions
 Codename: jessie
 Components: main
